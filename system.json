@@ -1,0 +1,45 @@
+{
+    "id": "ffxiv-ttrpg",
+    "title": "Final Fantasy XIV TTRPG",
+    "description": "A foundry implementation of the TTRPG version of the popular MMORPG Final Fantasy XIV.",
+    "version": "1.0.0",
+    "compatibility": {
+      "minimum": 12,
+      "verified": 12
+    },
+    "authors": [{
+      "name": "Connor Beck",
+      "email": "connor.j.beck@gmail.com"
+    }],
+    "esmodules": ["ffxiv-ttrpg.mjs"],
+    "styles": ["styles/ffxiv-ttrpg-foundry.css"],
+    "languages": [{
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }],
+    "documentTypes": {
+      "Actor": {
+        "adventurer": { "htmlFields": ["background.biography"] },
+        "enemy": { "htmlFields": ["background.biography"] },
+        "companion": {}
+      },
+      "Item": {
+        "item": {"htmlFields": ["description"]},
+        "ability": { "htmlFields": ["description"] }
+
+      }
+    },
+    "socket": true,
+    "grid": {
+      "distance": 1,
+      "units": "square"
+    },
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "resources.power",
+    "url": "https://github.com/ConnorJBeck/ffxiv-ttrpg-foundry",
+    "bugs": "https://github.com/ConnorJBeck/ffxiv-ttrpg-foundry/issues",
+    "changelog": "https://github.com/ConnorJBeck/ffxiv-ttrpg-foundry/blob/release/CHANGELOG.md",
+    "manifest": "https://github.com/ConnorJBeck/ffxiv-ttrpg-foundry/releases/latest/download/system.json",
+    "download": "https://github.com/ConnorJBeck/ffxiv-ttrpg-foundry/releases/latest/download/ffxiv-ttrpg-foundry.zip"
+  }
